@@ -5,38 +5,49 @@
 const portfolio = {
     // Personal information object
     owner: {
-        name: "Your Name Here",        // TODO: Add your name
-        title: "Your Title Here",      // TODO: Add your professional title
-        email: "your.email@example.com", // TODO: Add your email
-        location: "Your City, State",  // TODO: Add your location
-        bio: "Write a brief description about yourself here. What are you passionate about? What are your goals?" // TODO: Add your bio
+        name: "Lilia Mora",        // TODO: Add your name
+        title: "Aspiring PM",      // TODO: Add your professional title
+        email: "lilia.mora@berkeley.edu", // TODO: Add your email
+        location: "San Francisco, CA",  // TODO: Add your location
+        bio: "I studied Telecommunications and Electronics Engineering. I am passionate about the technical aspects of networking and I enjoy a creative approach to problem solving." // TODO: Add your bio
     },
     
     // Skills as an array
     skills: [
-        "Add your first skill here",   // TODO: Replace with your actual skills
-        "Add your second skill here",  // TODO: Add more skills
-        "Add your third skill here"    // TODO: Students should have at least 5 skills
-        // TODO: Add more skills - aim for 5-7 skills total
+        "React",   // TODO: Replace with your actual skills
+        "Frontend Framework",  // TODO: Add more skills
+        "JavaScript",
+        "Python",
+        "SQL",
+        "Go",
+        "GraphQL",
     ],
     
     // Projects as array of objects
     projects: [
         {
-            title: "Your First Project",
-            description: "Describe what this project does and why it's interesting",
-            technologies: ["HTML", "CSS"], // Array of technologies used
-            completionDate: "2025-08-15",   // When you completed it
-            featured: true                   // Is this a featured project?
+            title: "E-Commerce Platform", 
+            description: "A modern e-commerce platform built with React and Node.js, featuring shopping cart, payment integration, and admin dashboard.",
+            technologies: ["HTML", "CSS", "JavaScript"],
+            completionDate: "2025-09-01",
+            featured: true,
         },
         {
-            title: "Your Second Project", 
-            description: "Another project description here",
+            title: "Task Management App", 
+            description: "Productivity app with drag-and-drop functionality, project collaboration, and deadline tracking.",
             technologies: ["HTML", "CSS", "JavaScript"],
             completionDate: "2025-09-01",
             featured: false
-        }
-        // TODO: Add more projects during class
+        },
+        {
+            title: "Weather Dashboard", 
+            description: "Clean and intuitive weather dashboard with location search, 7-day forecast, and beautiful animations.",
+            technologies: ["HTML", "CSS", "JavaScript"],
+            completionDate: "2025-09-01",
+            featured: false
+        },
+        
+        
     ],
     
     // Contact and availability information
@@ -50,6 +61,10 @@ const portfolio = {
 // Let's explore our data structure in the console
 console.log("=== PORTFOLIO DATA EXPLORER ===");
 console.log("Full portfolio object:", portfolio);
+
+console.log("My name:", portfolio.owner.name);
+console.log("Total skills:", portfolio.skills.length);
+console.log("First project:", portfolio.projects[0]);
 
 // TODO: During class, we'll add more console.log() statements to explore the data
 // Examples students will try:
