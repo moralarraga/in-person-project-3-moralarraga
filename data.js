@@ -80,3 +80,19 @@ console.log("First project:", portfolio.projects[0]);
 // TODO: Students will create summary strings using template literals
 // let summary = `${portfolio.owner.name} is a ${portfolio.owner.title} with ${portfolio.skills.length} skills.`;
 // console.log("Summary:", summary);
+
+// Create summary statistics
+console.log("===== Portfolio Summary =====");
+console.log(`${portfolio.owner.name} has ${portfolio.skills.length} skills`);
+console.log(`and ${portfolio.projects.length} projects`);
+
+// Find featured projects
+for (let i = 0; i < portfolio.projects.length; i++) {
+    if (portfolio.projects[i].featured === true) {
+        console.log("⭐ Featured:", portfolio.projects[i].title);
+    }
+}
+
+// Convert to JSON for storage/debugging
+let dataAsJSON = JSON.stringify(portfolio, null, 2);
+console.log("Portfolio as JSON:", dataAsJSON);
